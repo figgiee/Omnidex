@@ -1,11 +1,11 @@
 ## **FINAL PROJECT PROPOSAL: Omnidex**
 
-I propose to build a utility desktop application, named "Omnidex," designed to streamline the management of my large Unreal Engine asset collection. The app will have a fast Rust backend and a user-friendly interface built with [Vue.js](https://vuejs.org/), using Tauri to create a lightweight and efficient program with native webviews.
+I propose to build a utility desktop application, named "Omnidex" designed to streamline the management of my large Unreal Engine asset collection. The app will have a fast Rust backend and a user-friendly interface built with [Vue.js](https://vuejs.org/), using Tauri to create a lightweight and efficient program with native webviews.
 
 The application will allow me to:
 
 1. **Index Local Assets:** Rapidly scan specified local directories recursively, and storing it in a local SQLite database for filtering/sorting.  
-2. **Scrape Marketplace Data:** Query the FAB Marketplace online (or a similar reference like orbital-market.com) to retrieve detailed metadata for marketplace assets.Try and find out how the API works for FAB / Orbital Market  
+2. **Scrape Marketplace Data:** Query the FAB Marketplace online (or a similar reference like orbital-market.com) to retrieve detailed metadata for marketplace assets. Try and find out how the API works for FAB / Orbital Market.
 3. **Match and Present:** Implement a robust matching algorithm to compare my indexed local assets with the scraped marketplace data, identifying potential matches, new versions, or updates. The application will present these matches (or unmatched assets) in a user-friendly GUI.  
 4. **Export/Import:** Allow users to export and import their asset catalog in common formats like JSON or CSV.
 
@@ -13,13 +13,13 @@ The final project will be a runnable desktop application demonstrated through a 
 
 ### **PROJECT STEPS**
 
-I have previously created this app with Python and I am interested in seeing how Rust will handle it. Personally I feel like apps that serve as a tool for something quick like this, should be light-weight and not complex. I have seen how performant apps/frameworks/libraries built with Rust can be so I'm looking forward to this.. 
+I have previously created this app with Python and I am interested in seeing how Rust will handle it. Personally I feel like apps that serve as a tool for something quick like this, should be light-weight and not as complex. I have seen how performant apps/frameworks/libraries built with Rust can be so I'm looking forward to this. 
 
 **Phase 1: Rust Backend \- Local Asset Indexing Core**
 
 **Goal:** Rebuild the fundamental local asset scanning logic in Rust. This includes recursive directory traversal, basic file/folder metadata extraction, and initial asset data structuring in Rust structs.
 
-* **Learning/Figure Out:** Rust's ownership and borrowing system, asynchronous programming (async/await with tokio), file system operations (std::fs, walkdir crate), and data serialization/deserialization (serde). (The folder names of assets are not clean)  
+* **Learning/Figure Out:** Rust's ownership and borrowing system, asynchronous programming (async/await with tokio), file system operations (std::fs, walkdir crate), and data serialization/deserialization (serde). (The folder names of assets are not clean) . 
 * **Deliverable:** A command-line Rust program that can scan a directory and output parsed asset data to the console or a file.
 
 **Phase 2: Rust Backend \- Database Integration** 
@@ -31,7 +31,7 @@ I have previously created this app with Python and I am interested in seeing how
 
 **Phase 3: Tauri & Frontend Integration**
 
-* **Goal:** Set up Tauri to connect the existing Vue.js frontend with the new Rust backend. This involves exposing Rust functions as Tauri commands (\#\[tauri::command\]) and adjusting the Vue.js frontend to use window.\_\_TAURI\_\_.invoke() for backend communication. Try and implement real-time progress updates for scanning. (Async operations make this really important to include)  
+* **Goal:** Set up Tauri to connect the existing Vue.js frontend with the new Rust backend. This involves exposing Rust functions as Tauri commands (\#\[tauri::command\]) and adjusting the Vue.js frontend to use window.\_\_TAURI\_\_.invoke() for backend communication. Try and implement real-time progress updates for scanning. (Async operations make this really important to include).
 * **Learning/Figure Out:** Tauri's setup, Rust-to-JavaScript communication patterns, and adapting existing Vue.js components to the new IPC.  
 * **Deliverable:** A runnable Tauri desktop application where the existing Vue.js UI can trigger the Rust-based asset scanner and receive progress updates, with data syncing and saving to the SQLite database.
 
@@ -87,12 +87,12 @@ I have previously created this app with Python and I am interested in seeing how
 
 I'll be documenting my process thoroughly using the following methods:
 
-* **Git Commit Messages:** Regular, descriptive commit messages outlining changes, features implemented, bug fixes, and reasoning behind major decisions.  
-* **DEVLOG.md (or PROGRESS.md):** A dedicated markdown file in the root of my repository will serve as a detailed development journal. This will include:  
+* **Git Commit Messages:** Regular, descriptive commit messages outlining changes, features implemented, bug fixes, and my reasoning behind major decisions.  
+* **DEVLOG.md:** A dedicated markdown file in the root of my repository will serve as a detailed development journal. This will include:  
   * Detailing progress made against the proposed steps.  
   * Challenges encountered.  
   * Approaches taken to solve these problems  
-  * Screenshots of UI progress   
+  * UI thought process   
 * **In-Code Comments:** Comments within the Rust source code and Vue.js components to explain complex logic, algorithms, and design choices.
 
 ### **WHY?**
