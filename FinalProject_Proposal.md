@@ -11,7 +11,7 @@ The application will allow me to:
 
 The final project will be a runnable desktop application demonstrated through a live walkthrough, showcasing its scanning, matching, and browsing capabilities. The complete source code, including both Rust backend and Vue.js frontend, will be published on my GitHub repository.
 
-### **PROJECT STEPS AND ESTIMATED TIMELINE**
+### **PROJECT STEPS **
 
 I have previously created this app with Python and I am interested in seeing how Rust will handle it. Personally I feel like apps that serve as a tool for something quick like this, should be light-weight and not complex. I have seen how performant apps/frameworks/libraries built with Rust can be so I’m looking forward to this.. 
 
@@ -46,13 +46,13 @@ I have previously created this app with Python and I am interested in seeing how
   * **Rate Limiting & Error Handling:** Robust handling of network errors, rate limits, and anti-bot measures. If possible I could spread out the scraping, I would only realistically need to do 1 large scrape operation, then in the future it would be small incremental scrapes that should not be a problem.  
 * **Deliverable:** A Rust module capable of searching the FAB marketplace and extracting structured MarketplaceAsset data.
 
-**Phase 5: Rust Backend \- Matching Algorithm (Approx. 1 week)**
+**Phase 5: Rust Backend \- Matching Algorithm**
 
 * **Goal:** Develop the fuzzy matching algorithm in Rust. This component will compare local asset names and metadata with marketplace data, calculating a confidence score and updating the matchStatus in the database.  
 * **Learning/Figure Out:** Rust crates for string similarity, efficient data comparison techniques, and potentially parallel processing of matches.  
 * **Deliverable:** A Rust service that can identify and update asset matches in the database.
 
-**Phase 6: UI Enhancements & Polishing (Approx. 1 week)**
+**Phase 6: UI Enhancements & Polishing**
 
 * **Goal:** Populate the AssetBrowserView.vue and UnmatchedAssetsView.vue with real data from the database. Implement filtering, sorting, and search functionalities in the frontend, backed by database queries in Rust. Refine the UI for a smooth user experience.  
 * **Learning/Figure Out:** Vue.js data display patterns, efficient filtering/sorting implementation, and general UI/UX best practices within the existing design system.  
