@@ -11,9 +11,9 @@ The application will allow me to:
 
 The final project will be a runnable desktop application demonstrated through a live walkthrough, showcasing its scanning, matching, and browsing capabilities. The complete source code, including both Rust backend and Vue.js frontend, will be published on my GitHub repository.
 
-### **PROJECT STEPS **
+### **PROJECT STEPS**
 
-I have previously created this app with Python and I am interested in seeing how Rust will handle it. Personally I feel like apps that serve as a tool for something quick like this, should be light-weight and not complex. I have seen how performant apps/frameworks/libraries built with Rust can be so I’m looking forward to this.. 
+I have previously created this app with Python and I am interested in seeing how Rust will handle it. Personally I feel like apps that serve as a tool for something quick like this, should be light-weight and not complex. I have seen how performant apps/frameworks/libraries built with Rust can be so I'm looking forward to this.. 
 
 **Phase 1: Rust Backend \- Local Asset Indexing Core**
 
@@ -24,9 +24,7 @@ I have previously created this app with Python and I am interested in seeing how
 
 **Phase 2: Rust Backend \- Database Integration** 
 
-**Goal:** Integrate the Rust backend with a local SQLite database
-
-. Implement the AssetRepository methods (add, update, get, delete assets, scan history) to persist data.
+**Goal:** Integrate the Rust backend with a local SQLite database. Implement the AssetRepository methods (add, update, get, delete assets, scan history) to persist data.
 
 * **Learning/Figure Out:** SQL database interactions in Rust, error handling for database operations.  
 * **Deliverable:** A Rust backend that can store and retrieve asset and scan history data persistently.
@@ -87,7 +85,7 @@ I have previously created this app with Python and I am interested in seeing how
 
 **PROCESS DOCUMENTATION**
 
-I’ll be documenting my process thoroughly using the following methods:
+I'll be documenting my process thoroughly using the following methods:
 
 * **Git Commit Messages:** Regular, descriptive commit messages outlining changes, features implemented, bug fixes, and reasoning behind major decisions.  
 * **DEVLOG.md (or PROGRESS.md):** A dedicated markdown file in the root of my repository will serve as a detailed development journal. This will include:  
@@ -101,7 +99,7 @@ I’ll be documenting my process thoroughly using the following methods:
 
 This project is mainly focused on streamlining the creative process for complex software like Unreal Engine.. As a developer and artist, handling a large and ever-growing collection of Unreal Engine assets can become complicated and time-consuming. This tool is designed to automatically help find, organize, and keep track of metadata for assets, so users can spend less time on organizing and more time on creating new things.
 
-While there are websites like Orbital-Market that exist or software, this project could eventually expand into other 3D / Game Development related software, Blender has a CLI that lets you generate thumbnails orthographically which can be used in a GUI like Omnidex to help artists find what they’re looking for. The current native implementation for search/filtering on the FAB marketplace is poor, and is not reliable as a means of finding assets.
+While there are websites like Orbital-Market that exist or software, this project could eventually expand into other 3D / Game Development related software, Blender has a CLI that lets you generate thumbnails orthographically which can be used in a GUI like Omnidex to help artists find what they're looking for. The current native implementation for search/filtering on the FAB marketplace is poor, and is not reliable as a means of finding assets.
 
 ### **CONSTRAINT**
 
