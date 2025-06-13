@@ -1,6 +1,3 @@
-
-![Uploading omnidex.png…]()
-
 Omnidex is a desktop application designed to help Unreal Engine developers organize, browse, and edit their local asset libraries. It scans your folders and automatically fetches data from the Orbital Market to give you a comprehensive overview of your collection.
 
 ## Key Features
