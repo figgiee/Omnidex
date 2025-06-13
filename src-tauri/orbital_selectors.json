@@ -1,0 +1,12 @@
+{
+  "search_result_item_selector": ".listing-card, .product-card, .asset-card, [class*='card']",
+  "search_result_link_selector": "a[href*='/listings/'], a[href*='/products/']",
+  "search_result_title_selector": "h3, h2, .title, .name, [class*='title'], [class*='name']",
+  "search_result_price_selector": ".price, [class*='price']",
+  "search_result_seller_selector": ".seller, .author, [class*='seller'], [class*='author']",
+  "search_result_image_selector": "img",
+  "product_description_selector": "#description, [class*='description'], #overview, [class*='overview']",
+  "product_technical_details_selector": "#tech-details, [class*='tech-details'], #technical-details, [class*='technical-details']",
+  "product_rating_selector": "[class*='rating'] [class*='star']",
+  "product_rating_count_selector": "[class*='rating-count'], [class*='review-count']"
+} 

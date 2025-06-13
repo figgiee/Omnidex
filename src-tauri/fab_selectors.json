@@ -1,0 +1,20 @@
+{
+  "product_title_selector": ".product-title-class", 
+  "price_selector": ".price-class",
+  "search_result_item_selector": "div.product-card",
+  "search_result_link_selector": "a.product-card-link",
+  "search_result_title_selector": "h3.product-card-title",
+  "search_result_price_selector": "span.product-card-price",
+  "search_result_seller_selector": "span.product-card-seller",
+  "search_result_image_selector": "img.product-card-image",
+  "detail_description_selector": "div[data-testid=\"description-content\"]",
+  "detail_seller_name_selector": "a[data-testid=\"seller-profile-link\"]",
+  "detail_category_selector": "a.category-breadcrumb-link",
+  "detail_release_date_selector": "span[data-testid=\"release-date\"]",
+  "detail_last_modified_selector": "span[data-testid=\"last-modified-date\"]",
+  "detail_tags_selector": "a.tag-link",
+  "detail_rating_average_selector": "span[data-testid=\"rating-average\"]",
+  "detail_rating_count_selector": "span[data-testid=\"rating-count\"]",
+  "detail_compatible_apps_selector": "li.compatible-app-item",
+  "detail_gallery_image_selector": "img.gallery-image"
+} 
